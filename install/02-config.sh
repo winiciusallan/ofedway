@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export OFERWAY_USER_NAME=$(gum input --placeholder "Enter full name" --prompt "Name> ")
-export OFERWAY_USER_MAIL=$(gum input --placeholder "Enter your email" --prompt "Mail> ")
+export OFEDWAY_USER_NAME=$(gum input --placeholder "Enter full name" --prompt "Name> ")
+export OFEDWAY_USER_MAIL=$(gum input --placeholder "Enter your email" --prompt "Mail> ")
 
-git config --global user.name ${OFERWAY_USER_NAME}
-git config --global user.mail ${OFERWAY_USER_MAIL}
+git config --global user.name ${OFEDWAY_USER_NAME}
+git config --global user.email ${OFEDWAY_USER_MAIL}
