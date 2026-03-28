@@ -10,7 +10,10 @@ ascii=' _______  _______  _______  ______            _______
 
 echo -e "\n$ascii\n"
 
-dnf install -y git &>/dev/null
+sudo dnf install -y git &>/dev/null
+
+echo -e "\nCloning Ofedway..."
+rm -rf ~/.local/share/ofedway
 git clone https://github.com/winiciusallan/ofedway.git ~/.local/share/ofedway >/dev/null
 
 # Clone my own dotfiles for post configurations.
