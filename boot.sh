@@ -8,6 +8,7 @@ ascii=' _______  _______  _______  ______            _______
 (_______)|/       (_______/(______/ (_______)|/     \|   \_/   
 '
 
+clear
 echo -e "\n$ascii\n"
 
 sudo dnf install -y git &>/dev/null

@@ -18,4 +18,5 @@ function configure_rpm() {
     sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 }
 
-configure_rpm && install_deps
+echo -e "\e[32mConfiguring RPM and installing dependencies...\e[0m"
+(configure_rpm && install_deps) >/dev/null
